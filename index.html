@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação de Projeto</title>
+    <!-- Inclui o framework Tailwind CSS para estilização fácil e responsiva -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Define a fonte Inter para todo o documento, garantindo consistência */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Cor de fundo leve */
+        }
+        /* Estilo para a tabela, permitindo rolagem horizontal em telas pequenas */
+        .table-container {
+            overflow-x: auto;
+        }
+        th, td {
+            white-space: nowrap; /* Impede que o texto quebre em várias linhas na tabela */
+        }
+        /* Estilos personalizados para o contêiner de benefícios, usando grid para alinhamento */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8">
+    <div class="max-w-6xl mx-auto bg-white rounded-xl shadow-2xl overflow-hidden">
+        <!-- Cabeçalho da apresentação -->
+        <header class="bg-indigo-600 text-white p-6 sm:p-10 text-center">
+            <h1 class="text-3xl sm:text-4xl font-extrabold mb-2">Cronograma de Implementação</h1>
+            <p class="text-xl sm:text-2xl font-light">GLPI para Recrutamento e Seleção</p>
+        </header>
+
+        <main class="p-6 sm:p-10">
+            <!-- Seção do cronograma -->
+            <section class="mb-10">
+                <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-indigo-200 pb-2">Plano de Ação</h2>
+                <div class="table-container bg-gray-50 rounded-lg shadow-inner">
+                    <table class="w-full text-sm text-left text-gray-700 border-collapse">
+                        <thead class="text-xs text-white uppercase bg-indigo-500 rounded-t-lg">
+                            <tr class="rounded-t-lg">
+                                <th scope="col" class="py-3 px-6 rounded-tl-lg">Etapa</th>
+                                <th scope="col" class="py-3 px-6">Atividade</th>
+                                <th scope="col" class="py-3 px-6">Responsável</th>
+                                <th scope="col" class="py-3 px-6 rounded-tr-lg">Prazo Estimado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-white border-b hover:bg-gray-100">
+                                <td class="py-4 px-6 font-semibold text-gray-900">1</td>
+                                <td class="py-4 px-6">Levantamento de Requisitos</td>
+                                <td class="py-4 px-6">Equipe de TI + RH</td>
+                                <td class="py-4 px-6">2 dias</td>
+                            </tr>
+                            <tr class="bg-gray-50 border-b hover:bg-gray-100">
+                                <td class="py-4 px-6 font-semibold text-gray-900">2</td>
+                                <td class="py-4 px-6">Estrutura Organizacional no GLPI</td>
+                                <td class="py-4 px-6">TI</td>
+                                <td class="py-4 px-6">1 dia</td>
+                            </tr>
+                            <tr class="bg-white border-b hover:bg-gray-100">
+                                <td class="py-4 px-6 font-semibold text-gray-900">3</td>
+                                <td class="py-4 px-6">Configuração de Perfis e Permissões</td>
+                                <td class="py-4 px-6">TI</td>
+                                <td class="py-4 px-6">1 dia</td>
+                            </tr>
+                            <tr class="bg-gray-50 border-b hover:bg-gray-100">
+                                <td class="py-4 px-6 font-semibold text-gray-900">4</td>
+                                <td class="py-4 px-6">Definição de Categorias de Chamados</td>
+                                <td class="py-4 px-6">TI + RH</td>
+                                <td class="py-4 px-6">2 dias</td>
+                            </tr>
+                            <tr class="bg-white border-b hover:bg-gray-100">
+                                <td class="py-4 px-6 font-semibold text-gray-900">5</td>
+                                <td class="py-4 px-6">Criação de Formulários (FormsCreator)</td>
+                                <td class="py-4 px-6">TI</td>
+                                <td class="py-4 px-6">3 dias</td>
+                            </tr>
+                            <tr class="bg-gray-50 border-b hover:bg-gray-100">
+                                <td class="py-4 px-6 font-semibold text-gray-900">6</td>
+                                <td class="py-4 px-6">Configuração de Fluxo de Atendimento</td>
+                                <td class="py-4 px-6">TI + RH</td>
+                                <td class="py-4 px-6">2 dias</td>
+                            </tr>
+                            <tr class="bg-white border-b hover:bg-gray-100">
+                                <td class="py-4 px-6 font-semibold text-gray-900">7</td>
+                                <td class="py-4 px-6">Testes Internos</td>
+                                <td class="py-4 px-6">TI + RH</td>
+                                <td class="py-4 px-6">2 dias</td>
+                            </tr>
+                            <tr class="bg-gray-50 border-b hover:bg-gray-100">
+                                <td class="py-4 px-6 font-semibold text-gray-900">8</td>
+                                <td class="py-4 px-6">Treinamento da Equipe</td>
+                                <td class="py-4 px-6">TI</td>
+                                <td class="py-4 px-6">1 dia</td>
+                            </tr>
+                            <tr class="bg-white border-b hover:bg-gray-100">
+                                <td class="py-4 px-6 font-semibold text-gray-900">9</td>
+                                <td class="py-4 px-6">Ajustes Finais</td>
+                                <td class="py-4 px-6">TI</td>
+                                <td class="py-4 px-6">1 dia</td>
+                            </tr>
+                            <tr class="bg-gray-50 hover:bg-gray-100">
+                                <td class="py-4 px-6 font-semibold text-gray-900">10</td>
+                                <td class="py-4 px-6">Início da Operação</td>
+                                <td class="py-4 px-6">RH</td>
+                                <td class="py-4 px-6">1 dia</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mt-6 text-right text-lg font-bold text-gray-700">
+                    Tempo total estimado: Aproximadamente 2 semanas.
+                </div>
+            </section>
+
+            <!-- Seção de ganhos e benefícios -->
+            <section>
+                <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-indigo-200 pb-2">Ganhos para a Área de Recrutamento e Seleção</h2>
+                <div class="benefits-grid">
+                    <!-- Item de benefício -->
+                    <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                        <span class="text-indigo-500 mr-4 text-2xl">✔️</span>
+                        <p class="text-gray-700 leading-relaxed font-medium">
+                            <strong class="text-gray-900">Centralização</strong> de todas as solicitações em uma única plataforma.
+                        </p>
+                    </div>
+                    <!-- Item de benefício -->
+                    <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                        <span class="text-indigo-500 mr-4 text-2xl">✔️</span>
+                        <p class="text-gray-700 leading-relaxed font-medium">
+                            <strong class="text-gray-900">Rastreabilidade</strong> de demandas (quem solicitou, quando, status atual).
+                        </p>
+                    </div>
+                    <!-- Item de benefício -->
+                    <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                        <span class="text-indigo-500 mr-4 text-2xl">✔️</span>
+                        <p class="text-gray-700 leading-relaxed font-medium">
+                            <strong class="text-gray-900">Agilidade</strong> no atendimento e priorização de tarefas.
+                        </p>
+                    </div>
+                    <!-- Item de benefício -->
+                    <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                        <span class="text-indigo-500 mr-4 text-2xl">✔️</span>
+                        <p class="text-gray-700 leading-relaxed font-medium">
+                            <strong class="text-gray-900">Padronização</strong> de processos com formulários específicos.
+                        </p>
+                    </div>
+                    <!-- Item de benefício -->
+                    <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                        <span class="text-indigo-500 mr-4 text-2xl">✔️</span>
+                        <p class="text-gray-700 leading-relaxed font-medium">
+                            <strong class="text-gray-900">Histórico de Atendimentos</strong> para análises futuras e relatórios gerenciais.
+                        </p>
+                    </div>
+                    <!-- Item de benefício -->
+                    <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                        <span class="text-indigo-500 mr-4 text-2xl">✔️</span>
+                        <p class="text-gray-700 leading-relaxed font-medium">
+                            <strong class="text-gray-900">Transparência</strong> no fluxo de trabalho, facilitando a comunicação interna.
+                        </p>
+                    </div>
+                    <!-- Item de benefício -->
+                    <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                        <span class="text-indigo-500 mr-4 text-2xl">✔️</span>
+                        <p class="text-gray-700 leading-relaxed font-medium">
+                            <strong class="text-gray-900">Adaptação de Ferramenta</strong> de TI para uma área de RH, otimizando recursos existentes sem custo adicional de licenciamento.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
